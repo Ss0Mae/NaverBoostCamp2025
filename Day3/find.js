@@ -110,7 +110,7 @@ function find(param0, param1) {
     }))
     .sort((a, b) => b.rating - a.rating)
     .map((x) => x.text)
-    .join(", ");
+    .join(",");
 
-  return result || "!EMPTY";
+  return result || "!EMPT";
 }
