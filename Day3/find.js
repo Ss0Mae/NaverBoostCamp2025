@@ -105,7 +105,7 @@ function find(param0, param1) {
     .filter((b) => b.start <= param0 && param0 <= b.end)
     .filter((b) => b.count >= param1)
     .map((b) => ({
-      text: `${b.name}${b.discontinued ? "* " : ""}(${b.category}) ${b.rating}`,
+      text: `${b.name}${b.discontinued ? "*  " : ""}(${b.category}) ${b.rating}`,
       rating: b.rating,
     }))
     .sort((a, b) => b.rating - a.rating)
